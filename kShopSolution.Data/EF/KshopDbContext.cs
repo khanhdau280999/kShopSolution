@@ -1,5 +1,6 @@
 ﻿using kShopSolution.Data.Configurations;
 using kShopSolution.Data.Entities;
+using kShopSolution.Data.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -45,7 +46,7 @@ namespace kShopSolution.Data.EF
             modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
 
             //Data seeding
-            //modelBuilder.Seed();
+            modelBuilder.Seed();
             //base.OnModelCreating(modelBuilder);
         }
 
