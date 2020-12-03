@@ -2,6 +2,7 @@
 using kShopSolution.Data.Entities;
 using kShopSolution.Data.Extensions;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Text;
 
 namespace kShopSolution.Data.EF
 {
-    public class KshopDbContext : DbContext
+    public class KshopDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
         public KshopDbContext(DbContextOptions options) : base(options) 
         {

@@ -102,13 +102,13 @@ namespace kShopSolution.Data.Extensions
                 Id = adminId,
                 UserName = "admin",
                 NormalizedUserName = "admin",
-                Email = "tedu.international@gmail.com",
-                NormalizedEmail = "tedu.international@gmail.com",
+                Email = "phuquockhanh10d5@gmail.com",
+                NormalizedEmail = "phuquockhanh10d5@gmail.com",
                 EmailConfirmed = true,
                 PasswordHash = hasher.HashPassword(null, "Abcd1234$"),
                 SecurityStamp = string.Empty,
-                FirstName = "Toan",
-                LastName = "Bach",
+                FirstName = "Khanh",
+                LastName = "Phu",
                 Dob = new DateTime(2020, 01, 31)
             });
 
