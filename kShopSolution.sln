@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kShopSolution.WebApp", "kShopSolution.WebApp\kShopSolution.WebApp.csproj", "{043EFF39-D07B-4D00-AAE0-B82BBB8B4D24}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Solution Items", "0.Solution Items", "{40171E7B-9ED5-4D97-B5F5-BD6BE5299426}"
 	ProjectSection(SolutionItems) = preProject
 		README.txt = README.txt
@@ -23,12 +21,17 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{2DC39F2E-5368-40EB-B874-A28843E95C0D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Hosts", "3.Hosts", "{EF48CA6B-5687-48D6-A4DE-1D3E341B8A23}"
+	ProjectSection(SolutionItems) = preProject
+		appsettings.json = appsettings.json
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kShopSolution.BackendApi", "kShopSolution.BackendApi\kShopSolution.BackendApi.csproj", "{5ACBA926-5A70-4658-A720-D78F70373580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kShopSolution.AdminApp", "kShopSolution.AdminApp\kShopSolution.AdminApp.csproj", "{E88ED315-430E-4C3C-A083-7340AC3B3706}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kShopSolution.AdminApp", "kShopSolution.AdminApp\kShopSolution.AdminApp.csproj", "{E88ED315-430E-4C3C-A083-7340AC3B3706}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kShopSolution.ApiIntegration", "kShopSolution.ApiIntegration\kShopSolution.ApiIntegration.csproj", "{75FE1977-68BC-4E9E-B15B-F98CE98364E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kShopSolution.ApiIntegration", "kShopSolution.ApiIntegration\kShopSolution.ApiIntegration.csproj", "{75FE1977-68BC-4E9E-B15B-F98CE98364E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kShopSolution.WebApp", "kShopSolution.WebApp\kShopSolution.WebApp.csproj", "{72391B6B-21C8-4132-85A2-B8DD3C385D6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{043EFF39-D07B-4D00-AAE0-B82BBB8B4D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{043EFF39-D07B-4D00-AAE0-B82BBB8B4D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{043EFF39-D07B-4D00-AAE0-B82BBB8B4D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{043EFF39-D07B-4D00-AAE0-B82BBB8B4D24}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D0F5ED8-ADFB-4E42-97D1-EDF3028B8BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D0F5ED8-ADFB-4E42-97D1-EDF3028B8BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D0F5ED8-ADFB-4E42-97D1-EDF3028B8BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,12 +67,15 @@ Global
 		{75FE1977-68BC-4E9E-B15B-F98CE98364E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75FE1977-68BC-4E9E-B15B-F98CE98364E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75FE1977-68BC-4E9E-B15B-F98CE98364E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72391B6B-21C8-4132-85A2-B8DD3C385D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72391B6B-21C8-4132-85A2-B8DD3C385D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72391B6B-21C8-4132-85A2-B8DD3C385D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72391B6B-21C8-4132-85A2-B8DD3C385D6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{043EFF39-D07B-4D00-AAE0-B82BBB8B4D24} = {EF48CA6B-5687-48D6-A4DE-1D3E341B8A23}
 		{4D0F5ED8-ADFB-4E42-97D1-EDF3028B8BF6} = {2DC39F2E-5368-40EB-B874-A28843E95C0D}
 		{964FE1AA-071D-4FE9-A156-DEEDBF359D35} = {2DC39F2E-5368-40EB-B874-A28843E95C0D}
 		{517079BB-1164-4105-8AB7-21144AF65D18} = {5F283191-2492-45B6-A25F-D1C69727EE4B}
@@ -81,6 +83,7 @@ Global
 		{5ACBA926-5A70-4658-A720-D78F70373580} = {EF48CA6B-5687-48D6-A4DE-1D3E341B8A23}
 		{E88ED315-430E-4C3C-A083-7340AC3B3706} = {EF48CA6B-5687-48D6-A4DE-1D3E341B8A23}
 		{75FE1977-68BC-4E9E-B15B-F98CE98364E7} = {EF48CA6B-5687-48D6-A4DE-1D3E341B8A23}
+		{72391B6B-21C8-4132-85A2-B8DD3C385D6A} = {EF48CA6B-5687-48D6-A4DE-1D3E341B8A23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D140E5D-20D8-4AD5-9BC3-299D83730C2C}
