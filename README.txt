@@ -8,7 +8,7 @@
 - Visual Studio 2019
 - SQL Server 2019
 ## How to configure and run
-- Clone code from Github: git clone https://github.com/khanhdau280999/kShopSolution
+- Clone code from Github: git clone https://github.com/khanhdau280999/kShopSolution/tree/develop
 - Open solution eShopSolution.sln in Visual Studio 2019
 - Set startup project is eShopSolution.Data
 - Change connection string in Appsetting.json in eShopSolution.Data project
